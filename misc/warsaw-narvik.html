@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <title>packowski.net /dev/</title>
+    <meta charset="UTF-8">
+    <style>
+        a { color: white; }
+    </style>
+</head>
+<body style="color: white; background-color: black; font-size: 2.2vw;">
+    <pre>
+ ----------------------------------------------------------------------
+|                     _                     _    _              _      |
+|    _ __   __ _  ___| | _______      _____| | _(_)  _ __   ___| |_    |
+|   | '_ \ / _` |/ __| |/ / _ \ \ /\ / / __| |/ / | | '_ \ / _ \ __|   |
+|   | |_) | (_| | (__|   < (_) \ V  V /\__ \   <| |_| | | |  __/ |_    |
+|   | .__/ \__,_|\___|_|\_\___/ \_/\_/ |___/_|\_\_(_)_| |_|\___|\__|   |
+|   |_|                                                                |
+|                                                                      |
+ ----------------------------------------------------------------------
+|/////|         |           |           |           |            |/////|
+|/////|    <a href="../index.html">/</a>    |   <a href="../usr/index.html">/usr/</a>   |   <a href="../bin/index.html">/bin/</a>   |   <a href="../dev/index.html">/dev/</a>   |   <a href="../misc/index.html">/misc/</a>   |/////|
+|/////|         |           |           |           |            |/////|
+ ----------------------------------------------------------------------
+|                                                                      |
+|   $ tree /misc/Warsaw-Narvik                                         |
+|   Warsaw-Narvik                                                      |
+|   ├── Train connections                                              |
+|   │   ├── Warszawa Centralna - Frankfurt (Oder)                      |
+|   │   │   ├── Departure                                              |
+|   │   │   │   ├── 2024 August 07                                     |
+|   │   │   │   └── 04:45 GMT+2                                        |
+|   │   │   ├── Arrival                                                |
+|   │   │   │   ├── 2024 August 07                                     |
+|   │   │   │   └── 09:09 GMT+2                                        |
+|   │   │   ├── Operator                                               |
+|   │   │   │   └── PKP Intercity                                      |
+|   │   │   └── Train number                                           |
+|   │   │       └── EC 248 Berlin-Warszawa-Express                     |
+|   │   ├── Frankfurt (Oder) - Erkner                                  |
+|   │   │   ├── Departure                                              |
+|   │   │   │   ├── 2024 August 07                                     |
+|   │   │   │   └── 09:26 GMT+2                                        |
+|   │   │   ├── Arrival                                                |
+|   │   │   │   ├── 2024 August 07                                     |
+|   │   │   │   └── 10:09 GMT+2                                        |
+|   │   │   ├── Operator                                               |
+|   │   │   │   └── ODEG                                               |
+|   │   │   └── Train number                                           |
+|   │   │       └── RE 93669                                           |
+|   │   ├── Erkner - Berlin Friedrichstraße                            |
+|   │   │   ├── Departure                                              |
+|   │   │   │   ├── 2024 August 07                                     |
+|   │   │   │   └── 11:04 GMT+2                                        |
+|   │   │   ├── Arrival                                                |
+|   │   │   │   ├── 2024 August 07                                     |
+|   │   │   │   └── 11:48 GMT+2                                        |
+|   │   │   ├── Operator                                               |
+|   │   │   │   └── Berlin S-Bahn                                      |
+|   │   │   └── Train number                                           |
+|   │   │       └── S3                                                 |
+|   │   ├── Berlin Friedrichstraße - Berlin Hauptbahnhof               |
+|   │   │   ├── Departure                                              |
+|   │   │   │   ├── 2024 August 07                                     |
+|   │   │   │   └── 11:57 GMT+2                                        |
+|   │   │   ├── Arrival                                                |
+|   │   │   │   ├── 2024 August 07                                     |
+|   │   │   │   └── 11:59 GMT+2                                        |
+|   │   │   ├── Operator                                               |
+|   │   │   │   └── Berlin S-Bahn                                      |
+|   │   │   └── Train number                                           |
+|   │   │       └── S7                                                 |
+|   │   ├── Berlin Gesundbrunnen - Stockholm Central                   |
+|   │   │   ├── Departure                                              |
+|   │   │   │   ├── 2024 August 07                                     |
+|   │   │   │   └── 18:37 GMT+2                                        |
+|   │   │   ├── Arrival                                                |
+|   │   │   │   ├── 2024 August 08                                     |
+|   │   │   │   └── 9:57 GMT+2                                         |
+|   │   │   ├── Operator                                               |
+|   │   │   │   └── SJ                                                 |
+|   │   │   └── Train number                                           |
+|   │   │       └── EN 346                                             |
+|   │   ├── Stockholm Central - Narvik                                 |
+|   │   │   ├── Departure                                              |
+|   │   │   │   ├── 2024 August 08                                     |
+|   │   │   │   └── 18:08 GMT+2                                        |
+|   │   │   ├── Arrival                                                |
+|   │   │   │   ├── 2024 August 09                                     |
+|   │   │   │   └── 12:40 GMT+2                                        |
+|   │   │   ├── Operator                                               |
+|   │   │   │   └── VY                                                 |
+|   │   │   └── Train number                                           |
+|   │   │       └── Nattåg 94                                          |
+|   │   ├── Narvik - Gällivare                                         |
+|   │   │   ├── Departure                                              |
+|   │   │   │   ├── 2024 August 17                                     |
+|   │   │   │   └── 10:30 GMT+2                                        |
+|   │   │   ├── Arrival                                                |
+|   │   │   │   ├── 2024 August 17                                     |
+|   │   │   │   └── 15:15 GMT+2                                        |
+|   │   │   ├── Operator                                               |
+|   │   │   │   └── VY                                                 |
+|   │   │   └── Train number                                           |
+|   │   │       └── Nattåg 95                                          |
+|   │   ├── Boden Central - Stockholm Central                          |
+|   │   │   ├── Departure                                              |
+|   │   │   │   ├── 2024 August 18                                     |
+|   │   │   │   └── 17:54 GMT+2                                        |
+|   │   │   ├── Arrival                                                |
+|   │   │   │   ├── 2024 August 19                                     |
+|   │   │   │   └── 06:27 GMT+2                                        |
+|   │   │   ├── Operator                                               |
+|   │   │   │   └── VY                                                 |
+|   │   │   └── Train number                                           |
+|   │   │       └── Nattåg 91                                          |
+|   │   ├── Stockholm Central - Berlin Hauptbahnhof                    |
+|   │   │   ├── Departure                                              |
+|   │   │   │   ├── 2024 August 19                                     |
+|   │   │   │   └── 17:34 GMT+2                                        |
+|   │   │   ├── Arrival                                                |
+|   │   │   │   ├── 2024 August 20                                     |
+|   │   │   │   └── 10:28 GMT+2                                        |
+|   │   │   ├── Operator                                               |
+|   │   │   │   └── SJ                                                 |
+|   │   │   └── Train number                                           |
+|   │   │       └── EN 345                                             |
+|   │   └── Berlin Hauptbahnhof - Warszawa Gdańska                     |
+|   │       ├── Departure                                              |
+|   │       │   ├── 2024 August 20                                     |
+|   │       │   └── 17:52 GMT+2                                        |
+|   │       ├── Arrival                                                |
+|   │       │   ├── 2024 August 20                                     |
+|   │       │   └── 23:17 GMT+2                                        |
+|   │       ├── Operator                                               |
+|   │       │   └── PKP Intercity                                      |
+|   │       └── Train number                                           |
+|   │           └── EC 249                                             |
+|   ├── Replacement bus connections                                    |
+|   │   └── Gällivare - Boden Central                                  |
+|   │       ├── Departure                                              |
+|   │       │   ├── 2024 August 19                                     |
+|   │       │   └── 11:58 GMT+2                                        |
+|   │       ├── Arrival                                                |
+|   │       │   ├── 2024 August 20                                     |
+|   │       │   └── 14:58 GMT+2                                        |
+|   │       ├── Operator                                               |
+|   │       │   └── VY                                                 |
+|   │       └── Train number                                           |
+|   │           └── Norrtåg 7163                                       |
+ ----------------------------------------------------------------------
+|   |   |   |   |   |   |  Free as in Freedom  |   |   |   |   |   |   |
+ ----------------------------------------------------------------------
+    </pre>
+</body>
+</html>
