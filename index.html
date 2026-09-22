@@ -5,10 +5,45 @@
     <meta charset="UTF-8">
     <style>
         a { color: white; }
+        @font-face {
+            font-family: 'opendyslexic';
+            src: url('./odm.otf') format('opentype');
+        }
+
+        .ascii-wrap {
+            display: inline-block;
+            position: relative;
+        }
+
+        .ring-slot {
+            position: relative;
+            display: inline-block;
+        }
+
+        .buttons-layer {
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: flex;
+            flex-wrap: nowrap;
+            align-items: center;
+            background: transparent;
+            line-height: 0;
+            width: 100%;
+        }
+
+        .buttons-layer img {
+            image-rendering: pixelated;
+            image-rendering: crisp-edges;
+            display: block;
+            height: 2.95vw;
+        }
+
     </style>
 </head>
-<body style="color: white; background-color: black; font-size: 2.2vw;">
-    <pre>
+<body style="color: white; background-color: black; font-size: 1.8vw;">
+<div class="ascii-wrap">
+    <pre style="font-family: 'opendyslexic'; margin: 0;">
  ----------------------------------------------------------------------
 |                     _                     _    _              _      |
 |    _ __   __ _  ___| | _______      _____| | _(_)  _ __   ___| |_    |
@@ -23,12 +58,15 @@
 |/////|         |           |           |           |            |/////|
  ----------------------------------------------------------------------
 |                                                                      |
-|   This a place for my thoughts and projects.                         |
+|   A place for my thoughts and projects                               |
+|   <span class="ring-slot"><div class="buttons-layer"><img src="https://88x31.kate.pet/hrtcafe.gif" /><img src="https://88x31.kate.pet/nb_noproblem.jpg"  /><img src="https://lucyrazem.com/assets/riversea.gif"  /><img src="https://yesterhost.neocities.org/archive/buttons/button360.png"  /><img src="https://cyber.dabamos.de/88x31/transnow2.gif"/><img src="https://88x31.kate.pet/lastfm-01.png"/><img src="https://88x31.kate.pet/button-88x31-gnu-glass-2.png"/><img src="https://88x31.kate.pet/cc-button.gif"  /><img src="https://88x31.kate.pet/nowar.png"/><img src="https://88x31.kate.pet/right_to_repair_01.jpg"  /></div></span>                                                                   |
+|   <span class="ring-slot"><div class="buttons-layer"><img src="https://88x31.kate.pet/firefox_now.png"/><img src="https://skye.sh/media/content/88x31/nocookie.gif"/><img src="https://skye.sh/media/content/88x31/libreboot.gif"/><img src="https://cyber.dabamos.de/88x31/latex.gif"/><img src="https://cyber.dabamos.de/88x31/vi_now.gif"/><img src="https://packowski.net/misc/buttons/nixos.png"/><img src="https://88x31.kate.pet/twopaws.png"/><img src="https://skye.sh/media/content/88x31/cc-by-sa.gif"/><img src="https://skye.sh/media/content/88x31/valid-html20.gif"/><img src="https://skye.sh/media/content/88x31/vcss.gif"/></div></span>                                                                   |
 |                                                                      |
  ----------------------------------------------------------------------
-|   |   |   |   |   |   |  Free as in Freedom  |   |   |   |   |   |   |
+|   |   |   |   |   |   |     CC BY-SA 4.0     |   |   |   |   |   |   |
  ----------------------------------------------------------------------
     </pre>
-<a rel="me" href="https://mastodon.social/@DawPac"></a>
+</div>
 </body>
 </html>
+

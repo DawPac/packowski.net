@@ -5,10 +5,14 @@
     <meta charset="UTF-8">
     <style>
         a { color: white; }
+        @font-face {
+            font-family: 'opendyslexic';
+            src: url('../odm.otf') format('opentype');
+        }
     </style>
 </head>
-<body style="color: white; background-color: black; font-size: 2.2vw;">
-    <pre>
+<body style="color: white; background-color: black; font-size: 1.8vw;">
+    <pre style="font-family: 'opendyslexic';">
  ----------------------------------------------------------------------
 |                     _                     _    _              _      |
 |    _ __   __ _  ___| | _______      _____| | _(_)  _ __   ___| |_    |
@@ -25,31 +29,36 @@
 |                                                                      |
 |   $ tree /usr/                                                       |
 |   usr                                                                |
-|   └── dp                                                             |
-|       ├── Full name                                                  |
-|       │   └── Dawid Paćkowski                                        |
-|       ├── Pronouns                                                   |
-|       │   └── he/him                                                 |
-|       ├── Age                                                        |
-|       │   └── 18                                                     |
-|       ├── Location                                                   |
-|       │   ├── Country                                                |
-|       │   │   └── Poland                                             |
-|       │   └── City                                                   |
-|       │       └── Skierniewice                                       |
-|       ├── Contact                                                    |
-|       │   ├── Email                                                  |
-|       │   │   └── <a href="mailto: dawid@packowski.net">dawid@packowski.net</a>                                |
-|       │   ├── Mastodon                                               |
-|       │   │   └── <a rel="me" href="https://mastodon.social/@DawPac">@DawPac@mastodon.social</a>                            |
-|       │   ├── Pixelfed                                               |
-|       │   │   └── <a href="https://pixelfed.de/DawPac">@DawPac@pixelfed.de</a>                                |
-|       │   └── GitHub                                                 |
-|       │       └── <a href="https://github.com/DawPac">DawPac</a>                                             |
-|       └── <a href="./aboutme.html">About me</a>                                                   | 
+|   \-- dp                                                             |
+|       |-- Name                                                       |
+|       |   |-- Dawid Paćkowski                                        |
+|       |   \-- Paciak                                                 |
+|       |-- Pronouns                                                   |
+|       |   \-- they/them                                              |
+|       |-- Age                                                        |
+|       |   \-- 21                                                     |
+|       |-- Location                                                   |
+|       |   \-- Country                                                |
+|       |       \-- Poland                                             |
+|       |           \-- City                                           |
+|       |               |-- Skierniewice                               |
+|       |               \-- Katowice                                   |
+|       |-- Contact                                                    |
+|       |   |-- Radio                                                  |
+|       |   |   \-- Callsign                                           |
+|       |   |       \-- SP7ENB                                         |
+|       |   |-- Email                                                  |
+|       |   |   \-- <a href="mailto: dawid@packowski.net">dawid@packowski.net</a>                                |
+|       |   |       \-- <a href="../pgp.pub">pgp.pub</a>                                        |
+|       |   |-- Fediverse                                              |
+|       |   |   \-- <a rel="me" href="https://packowski.net/@dawid">@dawid@packowski.net</a>                               |
+|       |   \-- GitHub                                                 |
+|       |       \-- <a href="https://github.com/DawPac">DawPac</a>                                             |
+|       |-- <a href="../ssh_keys.pub">ssh_keys.pub</a>                                               |
+|       \-- <a href="./aboutme.html">about_me.pub</a>                                               | 
 |                                                                      |
  ----------------------------------------------------------------------
-|   |   |   |   |   |   |  Free as in Freedom  |   |   |   |   |   |   |
+|   |   |   |   |   |   |     CC BY-SA 4.0     |   |   |   |   |   |   |
  ----------------------------------------------------------------------
     </pre>
 </body>
